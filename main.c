@@ -4,7 +4,7 @@
 #include <math.h>
 
 int main() {
-    int total_pontos = 1000000;
+    int total_pontos = 100000000;
     int pontos_dentro_circulo = 0;
     
     srand(time(NULL)); // Inicializa a semente para números aleatórios
@@ -22,7 +22,7 @@ int main() {
     // Estime o valor de pi usando o método de Monte Carlo
     double estimativa_pi = 4.0 * ((double)pontos_dentro_circulo / total_pontos);
 
-    printf("Estimativa de Pi usando Monte Carlo: %f\n", estimativa_pi);
+    printf("Estimativa de Pi usando Monte Carlo: %.50f\n", estimativa_pi);
 
     return 0;
 }
